@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <script type="module">
+      import { getDayOfYear } from "https://unpkg.com/date-fns/getDayOfYear.mjs";
+      import init, { after, reverse, Clock } from "./pkg/wasm_playground.js";
+    
+      const toRustDate = (date) => {
+        return [
+          date.getFullYear(),
+          getDayOfYear(date),
+          date.getHours(),
+          date.getMinutes(),
+          date.getSeconds(),
+          date.getMilliseconds(),
+        ]
+      }
+
+      init().then(() => {
+        console.log('*************************************************')
+        console.log('Excercise #1: Reverse')
+        console.log('*************************************************')
+        console.log('reversing - uüu', reverse('uüu'));
+        console.log('')
+
+        console.log('*************************************************')
+        console.log('Excercise #2: Gigasecond')
+        console.log('*************************************************')
+        const date = new Date(2015, 0, 24, 22, 0);
+        const rust_date = toRustDate(date);
+        console.log('dates', date, rust_date)
+        const giga = after(rust_date);
+        console.log('after', new Date(...giga));
+        console.log('')
+
+        console.log('*************************************************')
+        console.log('Excercise #3: Clock')
+        console.log('*************************************************')
+        const clock = new Clock(1, 30);
+        console.log('clock start', clock.stringify());
+        console.log('subtract 45 min', clock.add_minutes(-45).stringify());
+        console.log('')
+      });
+    </script>
+  </body>
+</html>
+
