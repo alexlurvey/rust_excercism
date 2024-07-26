@@ -7,7 +7,12 @@
   <body>
     <script type="module">
       import { getDayOfYear } from "https://unpkg.com/date-fns/getDayOfYear.mjs";
-      import init, { after, reverse, Clock } from "./pkg/wasm_playground.js";
+      import init, {
+        after,
+        anagram_for,
+        reverse,
+        Clock,
+      } from "./pkg/wasm_playground.js";
     
       const toRustDate = (date) => {
         return [
@@ -44,6 +49,12 @@
         console.log('clock start', clock.stringify());
         console.log('subtract 45 min', clock.add_minutes(-45).stringify());
         console.log('')
+
+        console.log('*************************************************')
+        console.log('Excercise #4: Anagram')
+        console.log('*************************************************')
+        const anagrams = anagram_for("LISTEN", ["LISTEN", "Silent"]);
+        console.log('anagrasm for: LISTEN', anagrams)
       });
     </script>
   </body>

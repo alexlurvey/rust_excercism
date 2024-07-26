@@ -6,3 +6,6 @@ pub mod gigasecond;
 
 // https://exercism.org/tracks/rust/exercises/clock
 pub mod clock;
+
+// https://exercism.org/tracks/rust/exercises/anagram
+pub mod anagram;
