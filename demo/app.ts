@@ -3,8 +3,10 @@ import init, {
   after,
   anagram_for,
   reverse,
+  years_during,
+  Planet,
   Clock,
-} from "../pkg/wasm_playground.js";
+} from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
   return [
@@ -47,4 +49,27 @@ init().then(() => {
   console.log('*************************************************')
   const anagrams = anagram_for("LISTEN", ["LISTEN", "Silent"]);
   console.log('anagrasm for: LISTEN', anagrams)
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #5: Space Age')
+  console.log('*************************************************')
+  const seconds = BigInt(1_000_000_000); // 31.69 earth years
+  const mercury = years_during(BigInt(1000000000), Planet.Mercury);
+  const venus = years_during(BigInt(1000000000), Planet.Venus);
+  const earth = years_during(BigInt(1000000000), Planet.Earth);
+  const mars = years_during(BigInt(1000000000), Planet.Mars);
+  const jupiter = years_during(BigInt(1000000000), Planet.Jupiter);
+  const saturn = years_during(BigInt(1000000000), Planet.Saturn);
+  const uranus = years_during(BigInt(1000000000), Planet.Uranus);
+  const neptune = years_during(BigInt(1000000000), Planet.Neptune);
+  console.log(`${earth.toFixed(2)} earth years is:`);
+  console.log(`${mercury.toFixed(2)} Mercury years`);
+  console.log(`${venus.toFixed(2)} Venus years`);
+  console.log(`${mars.toFixed(2)} Mars years`);
+  console.log(`${jupiter.toFixed(2)} Jupiter years`);
+  console.log(`${saturn.toFixed(2)} Saturn years`);
+  console.log(`${uranus.toFixed(2)} Uranus years`);
+  console.log(`${neptune.toFixed(2)} Neptune years`);
+
 })

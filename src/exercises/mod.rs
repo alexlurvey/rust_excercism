@@ -9,3 +9,6 @@ pub mod clock;
 
 // https://exercism.org/tracks/rust/exercises/anagram
 pub mod anagram;
+
+// https://exercism.org/tracks/rust/exercises/space-age
+pub mod space_age;
