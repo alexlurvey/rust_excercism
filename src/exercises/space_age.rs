@@ -2,6 +2,16 @@ use wasm_bindgen::prelude::*;
 
 const EARTH_YEAR_SECONDS: f64 = 31_557_600.0;
 
+macro_rules! planet_impl {
+    ($t:ty, $x:expr) => {
+        impl Planet for $t {
+            fn years_during(d: &Duration) -> f64 {
+                d.seconds as f64 / ($x * EARTH_YEAR_SECONDS)
+            }
+        }
+    };
+}
+
 #[derive(Debug)]
 #[wasm_bindgen]
 pub struct Duration {
@@ -35,46 +45,14 @@ pub struct Uranus;
 #[wasm_bindgen]
 pub struct Neptune;
 
-impl Planet for Mercury {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (0.2408467 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Venus {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (0.61519726 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Earth {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / EARTH_YEAR_SECONDS
-    }
-}
-impl Planet for Mars {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (1.8808158 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Jupiter {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (11.862615 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Saturn {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (29.447498 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Uranus {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (84.016846 * EARTH_YEAR_SECONDS)
-    }
-}
-impl Planet for Neptune {
-    fn years_during(d: &Duration) -> f64 {
-        d.seconds as f64 / (164.79132 * EARTH_YEAR_SECONDS)
-    }
-}
+planet_impl!(Mercury, 0.2408467);
+planet_impl!(Venus, 0.61519726);
+planet_impl!(Earth, 1.0);
+planet_impl!(Mars, 1.8808158);
+planet_impl!(Jupiter, 11.862615);
+planet_impl!(Saturn, 29.447498);
+planet_impl!(Uranus, 84.016846);
+planet_impl!(Neptune, 164.79132);
 
 #[wasm_bindgen(js_name = "Planet")]
 pub enum PlanetEnum {
