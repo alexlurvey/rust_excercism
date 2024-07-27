@@ -12,3 +12,6 @@ pub mod anagram;
 
 // https://exercism.org/tracks/rust/exercises/space-age
 pub mod space_age;
+
+// https://exercism.org/tracks/rust/exercises/sublist
+pub mod sublist;

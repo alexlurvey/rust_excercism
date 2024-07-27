@@ -3,9 +3,11 @@ import init, {
   after,
   anagram_for,
   reverse,
+  sublist,
   years_during,
-  Planet,
   Clock,
+  Comparison,
+  Planet,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -71,5 +73,17 @@ init().then(() => {
   console.log(`${saturn.toFixed(2)} Saturn years`);
   console.log(`${uranus.toFixed(2)} Uranus years`);
   console.log(`${neptune.toFixed(2)} Neptune years`);
+  console.log('')
 
+  console.log('*************************************************')
+  console.log('Excercise #6: Sublist')
+  console.log('*************************************************')
+  const sub = sublist([2, 3], [1, 2, 2, 3]);
+  const superlist = sublist([1, 2, 2, 3], [2, 3]);
+  const equal = sublist([1, 2, 3], [1, 2, 3])
+  const uneqaul = sublist([1, 2], [2, 3]);
+  console.log('Comparisons type for [2, 3] & [1, 2, 2, 3]: ', Comparison[sub])
+  console.log('Comparisons type for [1, 2, 2, 3] & [2, 3]: ', Comparison[superlist])
+  console.log('Comparisons type for [1, 2, 3] & [1, 2, 3]: ', Comparison[equal]);
+  console.log('Comparisons type for [1, 2] & [2, 3]: ', Comparison[uneqaul])
 })
