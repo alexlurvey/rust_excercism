@@ -18,3 +18,6 @@ pub mod sublist;
 
 // https://exercism.org/tracks/rust/exercises/minesweeper
 pub mod minesweeper;
+
+// https://exercism.org/tracks/rust/exercises/luhn
+pub mod luhn;

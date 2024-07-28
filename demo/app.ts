@@ -3,6 +3,7 @@ import init, {
   after,
   anagram_for,
   annotate,
+  luhn,
   reverse,
   sublist,
   years_during,
@@ -108,4 +109,12 @@ init().then(() => {
   print_mf(minefield);
   console.log('______');
   print_mf(annotate(minefield));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #8: Luhn Algorithm')
+  console.log('*************************************************')
+  const luhn_input = '234 567 891 234';
+  console.log('luhn input: ', luhn_input);
+  console.log('is valid: ', luhn(luhn_input));
 })
