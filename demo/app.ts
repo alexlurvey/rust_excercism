@@ -10,6 +10,7 @@ import init, {
   Clock,
   Comparison,
   Planet,
+  is_armstrong_number,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -117,4 +118,10 @@ init().then(() => {
   const luhn_input = '234 567 891 234';
   console.log('luhn input: ', luhn_input);
   console.log('is valid: ', luhn(luhn_input));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #9: Armstrong Numbers')
+  console.log('*************************************************')
+  console.log('is 153 an armstrong number: ', is_armstrong_number(153));
 })

@@ -21,3 +21,6 @@ pub mod minesweeper;
 
 // https://exercism.org/tracks/rust/exercises/luhn
 pub mod luhn;
+
+// https://exercism.org/tracks/rust/exercises/armstrong-numbers
+pub mod armstrong;
