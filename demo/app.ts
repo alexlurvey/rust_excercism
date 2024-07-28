@@ -2,6 +2,7 @@ import { getDayOfYear } from 'date-fns/getDayOfYear';
 import init, {
   after,
   anagram_for,
+  annotate,
   reverse,
   sublist,
   years_during,
@@ -80,10 +81,31 @@ init().then(() => {
   console.log('*************************************************')
   const sub = sublist([2, 3], [1, 2, 2, 3]);
   const superlist = sublist([1, 2, 2, 3], [2, 3]);
-  const equal = sublist([1, 2, 3], [1, 2, 3])
+  const equal = sublist([1, 2, 3], [1, 2, 3]);
   const uneqaul = sublist([1, 2], [2, 3]);
-  console.log('Comparisons type for [2, 3] & [1, 2, 2, 3]: ', Comparison[sub])
-  console.log('Comparisons type for [1, 2, 2, 3] & [2, 3]: ', Comparison[superlist])
+  console.log('Comparisons type for [2, 3] & [1, 2, 2, 3]: ', Comparison[sub]);
+  console.log('Comparisons type for [1, 2, 2, 3] & [2, 3]: ', Comparison[superlist]);
   console.log('Comparisons type for [1, 2, 3] & [1, 2, 3]: ', Comparison[equal]);
-  console.log('Comparisons type for [1, 2] & [2, 3]: ', Comparison[uneqaul])
+  console.log('Comparisons type for [1, 2] & [2, 3]: ', Comparison[uneqaul]);
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #7: Minefield')
+  console.log('*************************************************')
+  const print_mf = (mf: string[]) => {
+    for (const row of mf) {
+      console.log(`"${row}"`);
+    }
+  }
+  const minefield = [
+    '  * ',
+    '    ',
+    ' *  ',
+    '  **',
+    ' *  ',
+    '    ',
+  ];
+  print_mf(minefield);
+  console.log('______');
+  print_mf(annotate(minefield));
 })

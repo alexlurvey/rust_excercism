@@ -15,3 +15,6 @@ pub mod space_age;
 
 // https://exercism.org/tracks/rust/exercises/sublist
 pub mod sublist;
+
+// https://exercism.org/tracks/rust/exercises/minesweeper
+pub mod minesweeper;
