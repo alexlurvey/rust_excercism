@@ -24,3 +24,6 @@ pub mod luhn;
 
 // https://exercism.org/tracks/rust/exercises/armstrong-numbers
 pub mod armstrong;
+
+// https://exercism.org/tracks/rust/exercises/beer-song
+pub mod beer_song;

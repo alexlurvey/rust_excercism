@@ -5,6 +5,7 @@ import init, {
   annotate,
   luhn,
   reverse,
+  sing,
   sublist,
   years_during,
   Clock,
@@ -124,4 +125,10 @@ init().then(() => {
   console.log('Excercise #9: Armstrong Numbers')
   console.log('*************************************************')
   console.log('is 153 an armstrong number: ', is_armstrong_number(153));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #10: Beer Song')
+  console.log('*************************************************')
+  console.log(sing(4, 0));
 })
