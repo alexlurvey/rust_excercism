@@ -27,3 +27,6 @@ pub mod armstrong;
 
 // https://exercism.org/tracks/rust/exercises/beer-song
 pub mod beer_song;
+
+// https://exercism.org/tracks/rust/exercises/difference-of-squares
+pub mod difference_of_squares;

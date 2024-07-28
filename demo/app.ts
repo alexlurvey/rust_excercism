@@ -3,6 +3,7 @@ import init, {
   after,
   anagram_for,
   annotate,
+  difference,
   luhn,
   reverse,
   sing,
@@ -131,4 +132,10 @@ init().then(() => {
   console.log('Excercise #10: Beer Song')
   console.log('*************************************************')
   console.log(sing(4, 0));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #11: Difference of Squares')
+  console.log('*************************************************')
+  console.log('difference of squares 1..10', difference(10));
 })
