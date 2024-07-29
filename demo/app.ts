@@ -4,6 +4,8 @@ import init, {
   anagram_for,
   annotate,
   difference,
+  grains_square,
+  grains_total,
   luhn,
   reverse,
   sing,
@@ -138,4 +140,11 @@ init().then(() => {
   console.log('Excercise #11: Difference of Squares')
   console.log('*************************************************')
   console.log('difference of squares 1..10', difference(10));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #12: Grains')
+  console.log('*************************************************')
+  console.log('grains on square 32', grains_square(32));
+  console.log('grains on entire board', grains_total());
 })
