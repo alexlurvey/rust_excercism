@@ -31,4 +31,8 @@ pub mod beer_song;
 // https://exercism.org/tracks/rust/exercises/difference-of-squares
 pub mod difference_of_squares;
 
+// https://exercism.org/tracks/rust/exercises/grains
 pub mod grains;
+
+// https://exercism.org/tracks/rust/exercises/leap
+pub mod leap;

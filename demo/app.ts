@@ -6,6 +6,8 @@ import init, {
   difference,
   grains_square,
   grains_total,
+  is_armstrong_number,
+  is_leap_year,
   luhn,
   reverse,
   sing,
@@ -14,7 +16,6 @@ import init, {
   Clock,
   Comparison,
   Planet,
-  is_armstrong_number,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -147,4 +148,11 @@ init().then(() => {
   console.log('*************************************************')
   console.log('grains on square 32', grains_square(32));
   console.log('grains on entire board', grains_total());
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #13: Leap')
+  console.log('*************************************************')
+  console.log('Is year 1970 a leap year: ', is_leap_year(BigInt(1970)));
+  console.log('Is year 2000 a leap year: ', is_leap_year(BigInt(2000)));
 })
