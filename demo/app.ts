@@ -9,6 +9,7 @@ import init, {
   is_armstrong_number,
   is_leap_year,
   luhn,
+  nth,
   reverse,
   sing,
   sublist,
@@ -155,4 +156,10 @@ init().then(() => {
   console.log('*************************************************')
   console.log('Is year 1970 a leap year: ', is_leap_year(BigInt(1970)));
   console.log('Is year 2000 a leap year: ', is_leap_year(BigInt(2000)));
+
+  console.log('*************************************************')
+  console.log('Excercise #14: Nth Prime')
+  console.log('*************************************************')
+  console.log('The 5th prime number is ', nth(4));
+  console.log('The 22nd prime number is ', nth(21));
 })

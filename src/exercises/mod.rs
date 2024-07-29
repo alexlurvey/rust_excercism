@@ -36,3 +36,6 @@ pub mod grains;
 
 // https://exercism.org/tracks/rust/exercises/leap
 pub mod leap;
+
+// https://exercism.org/tracks/rust/exercises/nth-prime
+pub mod nth_prime;
