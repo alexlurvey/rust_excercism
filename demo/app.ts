@@ -3,13 +3,16 @@ import init, {
   after,
   anagram_for,
   annotate,
+  build_proverb,
   difference,
+  factors,
   grains_square,
   grains_total,
   is_armstrong_number,
   is_leap_year,
   luhn,
   nth,
+  raindrops,
   reverse,
   sing,
   sublist,
@@ -17,8 +20,6 @@ import init, {
   Clock,
   Comparison,
   Planet,
-  factors,
-  build_proverb,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -178,4 +179,10 @@ init().then(() => {
   console.log('*************************************************')
   console.log('Build proverb of with: ["nail", "shoe", "horse", "rider", "message", "battle", "kingdom"]');
   console.log(build_proverb(['nail', 'shoe', 'horse', 'rider', 'message', 'battle', 'kingdom']))
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #17: Raindrops')
+  console.log('*************************************************')
+  console.log('Raindrops 21:', raindrops(21));
 })

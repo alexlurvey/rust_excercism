@@ -45,3 +45,6 @@ pub mod prime_factors;
 
 // https://exercism.org/tracks/rust/exercises/proverb
 pub mod proverb;
+
+// https://exercism.org/tracks/rust/exercises/raindrops
+pub mod raindrops;
