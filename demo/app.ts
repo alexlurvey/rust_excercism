@@ -18,6 +18,7 @@ import init, {
   Comparison,
   Planet,
   factors,
+  build_proverb,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -170,4 +171,11 @@ init().then(() => {
   console.log('*************************************************')
   console.log('Prime factors of 625 should be [5, 5, 5, 5]', factors(BigInt(625)));
   console.log('Prime factors of 901255 should be [5, 17, 23, 461] ', factors(BigInt(901255)));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #16: Build Proverb')
+  console.log('*************************************************')
+  console.log('Build proverb of with: ["nail", "shoe", "horse", "rider", "message", "battle", "kingdom"]');
+  console.log(build_proverb(['nail', 'shoe', 'horse', 'rider', 'message', 'battle', 'kingdom']))
 })

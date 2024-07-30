@@ -42,3 +42,6 @@ pub mod nth_prime;
 
 // https://exercism.org/tracks/rust/exercises/prime-factors
 pub mod prime_factors;
+
+// https://exercism.org/tracks/rust/exercises/proverb
+pub mod proverb;
