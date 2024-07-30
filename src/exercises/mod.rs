@@ -39,3 +39,6 @@ pub mod leap;
 
 // https://exercism.org/tracks/rust/exercises/nth-prime
 pub mod nth_prime;
+
+// https://exercism.org/tracks/rust/exercises/prime-factors
+pub mod prime_factors;

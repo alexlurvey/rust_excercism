@@ -17,6 +17,7 @@ import init, {
   Clock,
   Comparison,
   Planet,
+  factors,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -162,4 +163,11 @@ init().then(() => {
   console.log('*************************************************')
   console.log('The 5th prime number is ', nth(4));
   console.log('The 22nd prime number is ', nth(21));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #15: Prime Factors')
+  console.log('*************************************************')
+  console.log('Prime factors of 625 should be [5, 5, 5, 5]', factors(BigInt(625)));
+  console.log('Prime factors of 901255 should be [5, 17, 23, 461] ', factors(BigInt(901255)));
 })
