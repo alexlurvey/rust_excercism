@@ -51,3 +51,6 @@ pub mod raindrops;
 
 // https://exercism.org/tracks/rust/exercises/sum-of-multiples
 pub mod sum_of_multiples;
+
+// https://exercism.org/tracks/rust/exercises/bob
+pub mod bob;

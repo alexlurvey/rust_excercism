@@ -3,6 +3,7 @@ import init, {
   after,
   anagram_for,
   annotate,
+  bob,
   build_proverb,
   difference,
   factors,
@@ -192,4 +193,12 @@ init().then(() => {
   console.log('Excercise #17: Raindrops')
   console.log('*************************************************')
   console.log('Sum of multiples:', sum_of_multiples(33, new Uint32Array([3, 5])))
+  console.log('')
+
+
+  console.log('*************************************************')
+  console.log('Excercise #18: Bob')
+  console.log('*************************************************')
+  console.log("HEY BOB, HOW ARE YOU?");
+  console.log('Bob: ', bob('HEY BOB, HOW ARE YOU?'));
 })
