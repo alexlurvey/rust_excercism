@@ -14,6 +14,7 @@ import init, {
   nth,
   raindrops,
   reverse,
+  sum_of_multiples,
   sing,
   sublist,
   years_during,
@@ -185,4 +186,10 @@ init().then(() => {
   console.log('Excercise #17: Raindrops')
   console.log('*************************************************')
   console.log('Raindrops 21:', raindrops(21));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #17: Raindrops')
+  console.log('*************************************************')
+  console.log('Sum of multiples:', sum_of_multiples(33, new Uint32Array([3, 5])))
 })

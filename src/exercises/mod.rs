@@ -48,3 +48,6 @@ pub mod proverb;
 
 // https://exercism.org/tracks/rust/exercises/raindrops
 pub mod raindrops;
+
+// https://exercism.org/tracks/rust/exercises/sum-of-multiples
+pub mod sum_of_multiples;
