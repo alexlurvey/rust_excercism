@@ -57,3 +57,6 @@ pub mod bob;
 
 // https://exercism.org/tracks/rust/exercises/high-scores
 pub mod high_scores;
+
+// https://exercism.org/tracks/rust/exercises/matching-brackets
+pub mod matching_brackets;

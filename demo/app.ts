@@ -4,6 +4,7 @@ import init, {
   anagram_for,
   annotate,
   bob,
+  brackets_are_balanced,
   build_proverb,
   difference,
   factors,
@@ -207,4 +208,10 @@ init().then(() => {
   console.log('Excercise #20: Highscores')
   console.log('*************************************************')
   console.log('Highscores not WASM\'d')
+
+  console.log('*************************************************')
+  console.log('Excercise #21: Matching Brackets')
+  console.log('*************************************************')
+  const bracket_input = '"\\left(\\begin{array}{cc} \\frac{1}{3} & x\\\\ \\mathrm{e}^{x} &... x^2 \ \\end{array}\\right)";'
+  console.log(`is balanced: ${bracket_input}`, brackets_are_balanced(bracket_input));
 })
