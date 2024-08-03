@@ -190,15 +190,21 @@ init().then(() => {
   console.log('')
 
   console.log('*************************************************')
-  console.log('Excercise #17: Raindrops')
+  console.log('Excercise #18: Raindrops')
   console.log('*************************************************')
   console.log('Sum of multiples:', sum_of_multiples(33, new Uint32Array([3, 5])))
   console.log('')
 
 
   console.log('*************************************************')
-  console.log('Excercise #18: Bob')
+  console.log('Excercise #19: Bob')
   console.log('*************************************************')
   console.log("HEY BOB, HOW ARE YOU?");
   console.log('Bob: ', bob('HEY BOB, HOW ARE YOU?'));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #20: Highscores')
+  console.log('*************************************************')
+  console.log('Highscores not WASM\'d')
 })

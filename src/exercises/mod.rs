@@ -54,3 +54,6 @@ pub mod sum_of_multiples;
 
 // https://exercism.org/tracks/rust/exercises/bob
 pub mod bob;
+
+// https://exercism.org/tracks/rust/exercises/high-scores
+pub mod high_scores;
