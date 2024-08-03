@@ -6,6 +6,7 @@ import init, {
   bob,
   brackets_are_balanced,
   build_proverb,
+  collatz,
   difference,
   factors,
   grains_square,
@@ -214,4 +215,10 @@ init().then(() => {
   console.log('*************************************************')
   const bracket_input = '"\\left(\\begin{array}{cc} \\frac{1}{3} & x\\\\ \\mathrm{e}^{x} &... x^2 \ \\end{array}\\right)";'
   console.log(`is balanced: ${bracket_input}`, brackets_are_balanced(bracket_input));
+
+  console.log('*************************************************')
+  console.log('Excercise #22: Collatz Conjecture')
+  console.log('*************************************************')
+  console.log('Collatz steps 16:', collatz(BigInt(16)));
+  console.log('Collatz steps 1000000:', collatz(BigInt(1000000)));
 })

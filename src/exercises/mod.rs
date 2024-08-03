@@ -60,3 +60,6 @@ pub mod high_scores;
 
 // https://exercism.org/tracks/rust/exercises/matching-brackets
 pub mod matching_brackets;
+
+// https://exercism.org/tracks/rust/exercises/collatz-conjecture
+pub mod collatz_conjecture;
