@@ -20,6 +20,7 @@ import init, {
   raindrops,
   reverse,
   secret,
+  series,
   sing,
   sublist,
   sum_of_multiples,
@@ -234,4 +235,10 @@ init().then(() => {
   const diffie_pub_key = public_key(diffie_mod, diffie_n, diffie_private_key);
   const diffie_secret = secret(diffie_mod, diffie_pub_key, diffie_private_key);
   console.log('diffie - public | private | secret', diffie_pub_key, diffie_private_key, diffie_secret);
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #24: Series')
+  console.log('*************************************************')
+  console.log('partition 4959303045 by 3:', series('4959303045', 3));
 })
