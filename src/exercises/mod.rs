@@ -72,3 +72,6 @@ pub mod series;
 
 // https://exercism.org/tracks/rust/exercises/kindergarten-garden
 pub mod kindergarten_garden;
+
+// https://exercism.org/tracks/rust/exercises/eliuds-eggs
+pub mod eluid_eggs;

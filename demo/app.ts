@@ -29,6 +29,7 @@ import init, {
   Clock,
   Comparison,
   Planet,
+  egg_count,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -250,4 +251,10 @@ init().then(() => {
   const diagram = `VRCGVVRVCGGCCGVRGCVCGCGV
   VRCCCGCRRGVCGCRVVCVGCGCV`;
   console.log("Bob's plants: ", plants(diagram, "Bob"));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #26: Egg Count')
+  console.log('*************************************************')
+  console.log('Egg count of 89: ', egg_count(89));
 })
