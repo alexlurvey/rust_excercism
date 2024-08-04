@@ -15,6 +15,7 @@ import init, {
   is_leap_year,
   luhn,
   nth,
+  plants,
   public_key,
   private_key,
   raindrops,
@@ -241,4 +242,12 @@ init().then(() => {
   console.log('Excercise #24: Series')
   console.log('*************************************************')
   console.log('partition 4959303045 by 3:', series('4959303045', 3));
+  console.log('')
+
+  console.log('*************************************************')
+  console.log('Excercise #25: Kindergarten Garden')
+  console.log('*************************************************')
+  const diagram = `VRCGVVRVCGGCCGVRGCVCGCGV
+  VRCCCGCRRGVCGCRVVCVGCGCV`;
+  console.log("Bob's plants: ", plants(diagram, "Bob"));
 })

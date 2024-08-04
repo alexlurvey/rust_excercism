@@ -69,3 +69,6 @@ pub mod diffie_hellman;
 
 // https://exercism.org/tracks/rust/exercises/series
 pub mod series;
+
+// https://exercism.org/tracks/rust/exercises/kindergarten-garden
+pub mod kindergarten_garden;
