@@ -15,11 +15,14 @@ import init, {
   is_leap_year,
   luhn,
   nth,
+  public_key,
+  private_key,
   raindrops,
   reverse,
-  sum_of_multiples,
+  secret,
   sing,
   sublist,
+  sum_of_multiples,
   years_during,
   Clock,
   Comparison,
@@ -221,4 +224,14 @@ init().then(() => {
   console.log('*************************************************')
   console.log('Collatz steps 16:', collatz(BigInt(16)));
   console.log('Collatz steps 1000000:', collatz(BigInt(1000000)));
+
+  console.log('*************************************************')
+  console.log('Excercise #23: Diffie-Hellman')
+  console.log('*************************************************')
+  const diffie_n = BigInt(5);
+  const diffie_mod = BigInt(23);
+  const diffie_private_key = private_key(BigInt(6131));
+  const diffie_pub_key = public_key(diffie_mod, diffie_n, diffie_private_key);
+  const diffie_secret = secret(diffie_mod, diffie_pub_key, diffie_private_key);
+  console.log('diffie - public | private | secret', diffie_pub_key, diffie_private_key, diffie_secret);
 })

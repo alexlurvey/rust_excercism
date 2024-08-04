@@ -63,3 +63,6 @@ pub mod matching_brackets;
 
 // https://exercism.org/tracks/rust/exercises/collatz-conjecture
 pub mod collatz_conjecture;
+
+// // https://exercism.org/tracks/rust/exercises/diffie-hellman
+pub mod diffie_hellman;
