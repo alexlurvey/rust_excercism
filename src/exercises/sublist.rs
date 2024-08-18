@@ -25,10 +25,10 @@ fn is_sublist<T: PartialEq>(list: &[T], candidate: &[T]) -> bool {
                 acc
             });
 
-    if start_indexes.len() > 0 {
+    if !start_indexes.is_empty() {
         if start_indexes.into_iter().any(|index| {
             return candidate
-                .into_iter()
+                .iter()
                 .enumerate()
                 .all(|(i, x)| i + index < list.len() && x == &list[i + index]);
         }) {
@@ -40,21 +40,21 @@ fn is_sublist<T: PartialEq>(list: &[T], candidate: &[T]) -> bool {
 }
 
 pub fn sublist<T: PartialEq>(first_list: &[T], second_list: &[T]) -> Comparison {
-    if first_list.len() == 0 && second_list.len() == 0 {
+    if first_list.is_empty() && second_list.is_empty() {
         return Comparison::Equal;
     }
 
-    if first_list.len() == 0 {
+    if first_list.is_empty()  {
         return Comparison::Sublist;
     }
 
-    if second_list.len() == 0 {
+    if second_list.is_empty() {
         return Comparison::Superlist;
     }
 
     if first_list.len() == second_list.len() {
         let eq = first_list
-            .into_iter()
+            .iter()
             .enumerate()
             .all(|(i, x)| x == &second_list[i]);
 
