@@ -1,5 +1,6 @@
 import { getDayOfYear } from 'date-fns/getDayOfYear';
 import init, {
+  abbreviate,
   after,
   anagram_for,
   annotate,
@@ -257,4 +258,11 @@ init().then(() => {
   console.log('Excercise #26: Egg Count')
   console.log('*************************************************')
   console.log('Egg count of 89: ', egg_count(89));
+  console.log('');
+
+  console.log('*************************************************')
+  console.log('Excercise #27: Acronym')
+  console.log('*************************************************')
+  console.log('Abbreviate "HyperText Markup Language" -', abbreviate("HyperText Markup Language"));
+  console.log('Abbreviate "Ruby on Rails" -', abbreviate("Ruby on Rails"));
 })

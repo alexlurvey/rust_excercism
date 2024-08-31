@@ -75,3 +75,6 @@ pub mod kindergarten_garden;
 
 // https://exercism.org/tracks/rust/exercises/eliuds-eggs
 pub mod eluid_eggs;
+
+// https://exercism.org/tracks/rust/exercises/acronym
+pub mod acronym;
