@@ -78,3 +78,6 @@ pub mod eluid_eggs;
 
 // https://exercism.org/tracks/rust/exercises/acronym
 pub mod acronym;
+
+// https://exercism.org/tracks/rust/exercises/all-your-base
+pub mod all_your_base;
