@@ -265,4 +265,10 @@ init().then(() => {
   console.log('*************************************************')
   console.log('Abbreviate "HyperText Markup Language" -', abbreviate("HyperText Markup Language"));
   console.log('Abbreviate "Ruby on Rails" -', abbreviate("Ruby on Rails"));
+  console.log('');
+
+  console.log('*************************************************')
+  console.log('Excercise #28: Allergies')
+  console.log('*************************************************')
+  console.log('Allergies not WASM\'d')
 })

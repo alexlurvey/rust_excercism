@@ -81,3 +81,6 @@ pub mod acronym;
 
 // https://exercism.org/tracks/rust/exercises/all-your-base
 pub mod all_your_base;
+
+// https://exercism.org/tracks/rust/exercises/allergies
+pub mod allergies;
