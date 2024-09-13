@@ -31,6 +31,7 @@ import init, {
   Comparison,
   Planet,
   egg_count,
+  find,
 } from "../pkg/wasm_playground";
 
 const toRustDate = (date: Date) => {
@@ -271,4 +272,15 @@ init().then(() => {
   console.log('Excercise #28: Allergies')
   console.log('*************************************************')
   console.log('Allergies not WASM\'d')
+
+  console.log('*************************************************')
+  console.log('Excercise #29: Alphametics')
+  console.log('*************************************************')
+  console.log('TODO')
+
+  console.log('*************************************************')
+  console.log('Excercise #30: Binary Search')
+  console.log('*************************************************')
+  const numbers = new Int32Array([34, 23, 3, 56, 7, 21, 62, 25, 46]);
+  console.log('Index of 25: ', find(numbers, 25));
 })

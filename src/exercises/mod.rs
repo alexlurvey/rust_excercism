@@ -84,3 +84,6 @@ pub mod all_your_base;
 
 // https://exercism.org/tracks/rust/exercises/allergies
 pub mod allergies;
+
+// https://exercism.org/tracks/rust/exercises/binary-search
+pub mod bindary_search;
